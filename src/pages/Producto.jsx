@@ -59,7 +59,7 @@ const Producto = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#f8f8f8] pt-24 pb-4">
+     <div className="min-h-screen bg-[#f8f8f8] pt-36 lg:pt-24 pb-4">
       {/* Header fijo (ancho completo) */}
       <div className="fixed top-0 left-0 right-0 bg-[#f8f8f8] pt-20 pb-4 z-10 border-b border-[#e5e5e5]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -166,7 +166,7 @@ const Producto = () => {
 
       {/* Sidebar móvil */}
       {isSidebarOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 lg:hidden">
+        <div className="fixed inset-0 bg-black bg-opacity-50 z-[60] lg:hidden">
           <div className="absolute left-0 top-0 bottom-0 w-3/4 bg-white p-6 overflow-y-auto">
             <div className="flex justify-between items-center mb-6">
               <h3 className="text-xl font-bold text-[#1a1a1a] font-serif">Filtros</h3>

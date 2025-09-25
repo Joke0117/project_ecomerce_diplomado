@@ -33,7 +33,7 @@ const Inicio = () => {
 
       // ⭐ Productos populares → ordenados por rating.count (reseñas)
       const populares = [...data]
-        .sort((a, b) => (b.count || 0) - (a.count || 0))
+        .sort((a, b) => (b.rating.count || 0) - (a.rating.count || 0))
         .slice(0, 8);
       setPopular(populares);
     });
