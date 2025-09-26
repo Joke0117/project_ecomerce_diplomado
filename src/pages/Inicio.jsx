@@ -31,9 +31,9 @@ const Inicio = () => {
       // 🔥 Productos destacados → los primeros 5
       setFeatured(data.slice(0, 5));
 
-      // ⭐ Productos populares → ordenados por rating.count (reseñas)
+      // ⭐ Productos populares → ordenados por count (reseñas)
       const populares = [...data]
-        .sort((a, b) => (b.rating.count || 0) - (a.rating.count || 0))
+        .sort((a, b) => (b.count || 0) - (a.count || 0))
         .slice(0, 8);
       setPopular(populares);
     });
